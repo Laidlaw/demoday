@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Demo Day Oct 10.1.13</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Alan Laidlaw">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Demo Day</h1>
+					<h3>by the Velocity Raptors</h3>
+					<p>
+						<small> by Josh Estes / Marcus Fulbright / Alan Laidlaw / </small>
+					</p>
+				</section>
+
+				<section>
+					<h2>kidcentral tn</h2>
+					<p>
+						90 Day Maintenance
+					</p>
+					<ul>
+						<li>Two new Pages</li>
+						<li>IE8 bug fixes</li>
+						<li>iphone bugs: 225- 229</li>
+						<li>Updates after mobile app launch: 181, </li>
+					</ul>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<!-- <section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>
+							Slides can be nested inside of other slides,
+							try pressing <a href="#" class="navigate-down">down</a>.
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Press down or up to navigate.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>Cornify</p>
+						<a class="test" href="http://cornify.com">
+							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 3</h2>
+						<p>That's it, time to go back up.</p>
+						<a href="#/2" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section> -->
+
+				<section>
+					<h2>Lee Company Prototype</h2>
+					<p>
+						We've begun a new process that will allow to work with designers more productively. Its called Prototyping.
+					</p>
+				</section>
+
+				<section>
+					<h2>Applications are far more involved than what we see.</h2>
+					<p>There are qualities that don't fall cleanly within design or development. Here are just a few 'invisible' elements:</p>
+					<ul>
+						<li>the speed of a page</li>
+						<li>the weight of a page</li>
+						<li>Paint reflow</li>
+						<li>user agents (devices)</li>
+						<li>application types (pdf for example)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is Prototyping?</h2>
+					<p>
+						I'm glad you asked! Prototyping is good for:
+					</p>
+					<ul>
+						<li>Feedback before Commitment</li>
+						<li>Discover potential complications</li>
+						<li>Validate design logic</li>
+						<li>Reinforce content strategy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Content Management Framework!</h2>
+					<p>
+						Handing it off to Josh
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Coming up</h2>
+					<ul>
+						<li>National Guard Prototype time</li>
+						<li>Soccer site theming</li>
+						<li>cmf template build</li>
+						<li>Lee Prototyping</li>
+					</ul>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
